@@ -1,15 +1,16 @@
-# Skrypt demonstracyjny: Uruchomienie Playwrighta i otwarcie strony
-from playwright.sync_api import sync_playwright  # Import API synchronicznego Playwrighta
+# Rozdział 1: Instalacja Playwrighta i pytest
 
-# Uruchomienie Playwrighta w bloku context managera
-with sync_playwright() as p:
-    # Uruchomienie przeglądarki Chromium w trybie headful (widoczna przeglądarka)
-    browser = p.chromium.launch(headless=False)
-    # Utworzenie nowej strony (karty) w przeglądarce
-    page = browser.new_page()
-    # Przejście na stronę example.com
-    page.goto("https://example.com")
-    # Pobranie tytułu strony i wyświetlenie go
-    title = page.title()
-    print(f"Tytuł strony: {title}")
-    # Przeglądarka jest automatycznie zamykana po wyjściu z bloku `with`
+## Wprowadzenie
+Aby rozpocząć pracę z Playwrightem i automatyzacją testów, musimy zainstalować niezbędne narzędzia: Pythona, Playwrighta i bibliotekę `pytest` z wtyczką `pytest-playwright`. W tym podrozdziale dowiesz się, jak skonfigurować środowisko projektowe.
+
+## Wymagania wstępne
+- Zainstalowany Python (wersja 3.8 lub nowsza).
+- Konfiguracja Git i repozytorium na GitHubie (już zrobione!).
+- PyCharm lub inny edytor kodu.
+
+## Krok po kroku: Instalacja
+
+### 1. Utwórz środowisko wirtualne (opcjonalne, ale zalecane)
+Środowisko wirtualne izoluje zależności projektu:
+```bash
+python -m venv .venv
