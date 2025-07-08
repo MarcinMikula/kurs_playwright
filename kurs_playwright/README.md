@@ -2,6 +2,7 @@
 
 Witaj w repozytorium kursu Playwright! Ten projekt ma na celu naukę automatyzacji testów przeglądarek przy użyciu Playwrighta i pytest. Poniżej znajdziesz instrukcje instalacji, strukturę projektu oraz sposób uruchamiania testów i generowania raportów.
 
+
 ## Struktura projektu
 
 - `dokumentacja/`: Pliki Markdown z opisem kursu.
