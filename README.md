@@ -1,1 +1,1 @@
-# kurs_playwright
+# kurs_playwright jest na masterze :)
