@@ -41,7 +41,8 @@ Witaj w repozytorium kursu Playwright! Ten projekt ma na celu naukę automatyzac
    .venv\Scripts\activate  # Na Windows
    pytest testy/test_zaawansowane_interakcje.py --headed --slowmo 500
    
-Przykładowe uuchamianie testów z jednoczesnym generowanie raportu:
+Przykładowe uruchamianie testów z jednoczesnym generowanie raportu:
+  ```bash
    pytest testy/test_zaawansowane_interakcje.py --html=raport_test_zaawansowane_interakcje_$(Get-Date -Format "yyyyMMdd_HHmmss").html --self-contained-html
 
 
